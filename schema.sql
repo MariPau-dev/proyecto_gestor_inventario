@@ -1,0 +1,9 @@
+CREATE DATABASE IF NOT EXISTS gestor_tareas;
+USE gestor_tareas;
+CREATE TABLE IF NOT EXISTS tareas (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(150) NOT NULL,
+    descripcion TEXT,
+   estado ENUM('pendiente','completada') NOT NULL DEFAULT 'pendiente',
+   creado_en TIMESTAMP DEFAULT CURRENT_TIMESTAMP    
+);

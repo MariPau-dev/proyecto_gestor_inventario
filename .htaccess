@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteCond %{DOCUMENT_ROOT}/gestor-tareas/public/$1 -f
+RewriteRule ^(.*)$ public/$1 [L]
